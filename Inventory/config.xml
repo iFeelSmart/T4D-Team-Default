@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest   name="hardware" prefix="WS_HDW">
+    <rule    name="default"         prefix="_t4dSetVariable         ELEMENT='DATA'">
+    <filename name="default"        data="${WS_HDW_TYPE}/${WS_HDW_UUID}-${WS_HDW_SHORTCUT}">
+
+    <element name="WS_HDW_PROFILE"  rule="file"        count="*">
+    <element name="WS_HDW_UUID"     rule="id"          count="1">
+    <element name="WS_HDW_SERIAL"   rule="serial"      count="*">
+    <element name="WS_HDW_IP"       rule="ipv4"        count="*">
+    <element name="WS_HDW_PRODUCT"  rule="data"        count="*">
+    <element name="WS_HDW_SHORTCUT" rule="data"        count="*">
+    <option  name="WS_HDW_TYPE"     rule="option"      count="1"  options="personnal.device|dev.board.stb|dev.board.mobile|desktop.computer|desktop.hardware|network.device|server|voip.device|other">
+    <list    name="WS_HDW_MAC"      rule="macAddress"  count="+"  elements="eth,wifi,wifi5">
+</manifest>
+
+
+
+<!-- Count : 1      = 1 Only  -->
+<!-- Count : +      = 1 or More  -->
+<!-- Count : *      = 0 or 1 for element, 0 or more for list  -->
+
+<!-- Rules : id             = must be unique, no space, only [0-9]  -->
+<!-- Rules : serial         = must be unique, no space, only [a-z] and [0-9]  -->
+<!-- Rules : file           = path should exist  -->
+<!-- Rules : ipv4           = IPV4 Address like XXX.XXX.XXX.XXX  -->
+<!-- Rules : macAddress     = Mac Address like XX:XX:XX:XX:XX  -->
+<!-- Rules : data           = No rule, can be anything  -->
+
