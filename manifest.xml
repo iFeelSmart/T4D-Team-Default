@@ -4,7 +4,9 @@
     <remote name="origin" ssh="ssh://git@github.com" http="https://<user>:<password>@github.com"/>
     <default key="iFeelSmart"    name="default"   remote="origin"      revision="master" />
     <project lock="true"  key="iFeelSmart"  remote="origin" name="T4D-Team-Default" default="default" revision="master" path="Team/Default" />
-    <project lock="true"  key="iFeelSmart"  remote="origin" name="Tools4Jenkins"    default="default" revision="main" path="Tools/Jenkins-CLI-opensource" />
+    <project lock="true"  key="iFeelSmart"  remote="origin" name="Tools4Jenkins"    default="default" revision="main" path="Tools/Jenkins-CLI" />
+    <project lock="true"  key="iFeelSmart"  remote="origin" name="configT4J-Sample" default="default" revision="main" path="Tools/Jenkins-CLI/srv/Sample" />
+    <project lock="true"  key="iFeelSmart"  remote="origin" name="libT4J-Sample"    default="default" revision="main" path="Tools/Jenkins-CLI/generated-lib/Sample" />
     <symbolic key="LOCAL" name="Users"      origin="$Tools4Dev_PATH/Team/Default/Users/" path="Users" />
     <symbolic key="LOCAL" name="xibalba"    origin="$HOME/.zshrc" path="$WS_ROOT/.zshrc" />
 </manifest>
